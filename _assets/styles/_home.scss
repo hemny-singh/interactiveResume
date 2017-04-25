@@ -1,6 +1,60 @@
-h1 {
-  font-family: Roboto;
-  text-align: center;
+html {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+// h1 {
+//   font-family: Roboto;
+//   text-align: center;
+// }
+
+
+.first-section {
+  background-image: url(/img/first-section.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.first-section-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.intro {
+  color: $white-color;
+  opacity: 1;
+  font-family: 'Roboto Bold'; 
+  min-height: 100vh;
+  padding-left: 100px;
+  padding-top: 100px;  
+  > h1 {
+    font-size: 5.5em;
+  }
+  
+  > h2 {
+    font-size: 5em;
+  }
+
+  .intro-dynamic {
+    color: #8BC34A;
+  }
+  
+  .ui-effects-wrapper {
+    display: inline;
+  }
 }
 
 .block {

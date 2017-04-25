@@ -7,13 +7,18 @@
 {% include head.html title=page.title %}
 
 <body>
-  {% include header.html %}
-  <div class="container">
-    <section class="middle">
-      <h1 class="display-5">{{ page.headline }}</h1>
-      <h2 class="display-8">{{ page.second-headline }}</h2>
-    </section>
-  </div>
+  <section class="first-section">
+  </section>
+  <section class="first-section-overlay">
+    <div class="intro">
+      <h1>
+        Hi! I'm Hemny,
+      </h1>
+      <br>
+      <h2>A Web Developer.</h2>
+      <h2>Who loves to <span class="intro-dynamic"></span></h2>
+    </div>
+  </section>
   {% include footer.html %}
-</body>
+ </body>
 </html>
