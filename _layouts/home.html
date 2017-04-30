@@ -7,7 +7,7 @@
 {% include head.html title=page.title %}
 
 <body>
-  <section class="first-section">
+  <section class="first-section" id="first_section_image">
   </section>
   <section class="first-section-overlay">
     <div class="intro">
@@ -18,6 +18,22 @@
       <h2>A Web Developer.</h2>
       <h2>Who loves to <span class="intro-dynamic"></span></h2>
     </div>
+  </section>
+  <section class="about-section"></section>
+  <section class="about-section-overlay">
+    <h2 class="flipOutX animated section-heading">ABOUT ME</h2>
+    {% include about.html %}
+  </section>
+  <section class="third-section">
+    <aside class="third-section-sticky">
+      <h2 class="flipOutX animated section-heading">PROJECTS</h2>
+    </aside>
+    <aside class="third-section-content">
+      {% include projects.html %}
+    </aside>
+  </section>
+  <section class="contactus-section sticky-stopper">
+    Contact Us
   </section>
   {% include footer.html %}
  </body>
