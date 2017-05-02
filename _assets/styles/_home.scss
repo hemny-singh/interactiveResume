@@ -35,33 +35,36 @@ body {
 }
 
 .third-section {
-  // min-height: 100vh;
   height: 100%;
   .third-section-sticky {
     background: $highlight3;
     width: 50%;
     height: 678px;
+    float: left;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 0;
+    top: 0;
     h2 {
       color: $white-color;
     }
   }
   .third-section-content {
     width: 50%;
-    min-height: 100vh;
-    position: relative;
-    left: 50%;
+    float: right;
+    top: 0;
     .projects-brief {
-      > img {
-        width: 618px;
-        margin: 15px;
+      img {
+        width: 100%;
       }
     }
   }
+}
+
+.sticky-stopper {
+  display: block;
+  clear: both;
 }
 
 .contactus-section {
@@ -153,5 +156,39 @@ body {
   &.right-pos {
     float: right;
     clear: left;
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 618px;
+  margin: 15px;
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background: rgba(139,195,74, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  &:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
 }

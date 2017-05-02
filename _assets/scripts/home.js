@@ -28,28 +28,39 @@ $('.first-section-overlay').mousemove(function(e){
 });
 
 function stickSidebar() {
-  var $sticky = $('.third-section-sticky');
-  var $stickyrStopper = $('.sticky-stopper');
-  if (!!$sticky.offset()) { // make sure ".sticky" element exists
-    var generalSidebarHeight = $sticky.innerHeight();
-    var stickyTop = $sticky.offset().top;
-    var stickOffset = 0;
-    var stickyStopperPosition = $stickyrStopper.offset().top;
-    var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
-    var diff = stopPoint + stickOffset;
+  var stickySidebar = $('.third-section-sticky');
 
-    $(window).scroll(function() { // scroll event
-      var windowTop = $(window).scrollTop(); // returns number
-      console.log(stopPoint, windowTop, 'xcvbn')
-      if (stopPoint < windowTop) {
-          $sticky.css({ position: 'absolute', top: diff });
-      } else if (stickyTop < windowTop+stickOffset) {
-          $sticky.css({ position: 'fixed', top: stickOffset});
-      } else {
-          $sticky.css({position: 'absolute', top: 'initial'});
-      }
-    });
+  if (stickySidebar.length > 0) {
+    var stickyHeight = stickySidebar.height(),
+      sidebarTop = stickySidebar.offset().top;
   }
+
+  // on scroll move the sidebar
+  $(window).scroll(function () {
+    if (stickySidebar.length > 0) {
+      var scrollTop = $(window).scrollTop();
+
+      if (sidebarTop < scrollTop) {
+        stickySidebar.css('top', scrollTop - sidebarTop);
+
+        // stop the sticky sidebar at the footer to avoid overlapping
+        var sidebarBottom = stickySidebar.offset().top + stickyHeight,
+            stickyStop = $('.third-section-content').offset().top + $('.third-section-content').height();
+        if (stickyStop < sidebarBottom) {
+          var stopPosition = $('.third-section-content').height() - stickyHeight;
+          stickySidebar.css('top', stopPosition);
+        }
+      } else {
+        stickySidebar.css('top', '0');
+      }
+    }
+  });
+
+  $(window).resize(function () {
+    if (stickySidebar.length > 0) {
+      stickyHeight = stickySidebar.height();
+    }
+  });
 }
 
 stickSidebar();
