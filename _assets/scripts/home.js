@@ -1,18 +1,9 @@
 $(document).ready(function(){
-  // $('.about-slider').slick({
-  //   autoplay: true,
-  //   autoplaySpeed: 2000
-  //   //dots: true,
-  //   //infinite: true,
-  //   //speed: 1500,
-  //   // fade: true,
-  //   //cssEase: 'linear'
-  // });
   var texts = [
-    "Think Logical.",
+    "Build Attractive Webpages",
+    "Work as a Team",
     "Solve Problems.",
-    "Work on Latest Tech.",
-    "Work as a Team."
+    "Work on new tech"
   ], count = 0;
 
   function changeText() {

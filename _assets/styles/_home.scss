@@ -166,6 +166,10 @@ body {
       color: $highlight1;
       font-family: 'AvenirNext Bold';
       font-size: 2em;
+      padding-top: 30px;
+      &:first-child {
+        padding-top: 0;
+      }
     }
     strong {
       color: $black-light-color;
