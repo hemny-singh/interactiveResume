@@ -1,6 +1,6 @@
---- 
-# 3 dashes above and below are needed 
-# so that jekyll can process the files 
+---
+# 3 dashes above and below are needed
+# so that jekyll can process the files
 ---
 <!DOCTYPE html>
 <html lang="en-gb">
@@ -19,21 +19,32 @@
       <h2>Who loves to <span class="intro-dynamic"></span></h2>
     </div>
   </section>
-  <section class="about-section"></section>
-  <section class="about-section-overlay">
-    <h2 class="flipOutX animated section-heading">ABOUT ME</h2>
-    {% include about.html %}
-  </section>
-  <section class="third-section">
-    <aside class="third-section-sticky">
-      <h2 class="flipOutX animated section-heading">PROJECTS</h2>
-    </aside>
-    <div class="third-section-content">
-      {% include projects.html %}
+  <section class="about-section">
+    <h2 class="section-heading">ABOUT ME</h2>
+    <div class="about-section-container">
+      <div class="right-sec">
+        <img src="/img/me.jpeg">
+      </div>
+      <div class="left-sec">
+        {% include about.html %}
+      </div>
     </div>
   </section>
+  <section class="third-section">
+    <h2 class="section-heading">Work</h2>
+    {% include projects.html %}
+  </section>
   <section class="contactus-section sticky-stopper">
-    Contact Us
+    <h2 class="section-heading">GET IN TOUCH</h2>
+    <div class="contactus-content">
+      <a href="mailto:hemnysingh455@gmail.com" class='bold-text'>Drop me an email </a>
+      at <i>hemnysingh455@gmail.com</i>.
+      I would love to hear back from you.
+      You can see my public projects at
+      <a href="https://github.com/hemny-singh" class="fa fa-github" aria-hidden="true" target="_blank"></a>
+      or connect to me on <a href="https://in.linkedin.com/in/hemnysingh" class='bold-text'>Linkedin</a>.
+    </div>
+    </div>
   </section>
   {% include footer.html %}
  </body>
