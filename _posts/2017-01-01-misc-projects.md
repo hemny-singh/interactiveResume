@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Miscellaneous
-permalink: /misc-projects
+permalink: /misc-projects.html
 ---
 
 

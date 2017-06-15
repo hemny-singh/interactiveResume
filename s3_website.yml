@@ -25,4 +25,9 @@ cloudfront_wildcard_invalidation: true
 
 redirects:
   index.html: /
-  about.html: /about
+  networking-vendor-projects.html: /networking-vendor-projects
+  misc-projects.html: /misc-projects
+  pet-resort.html: /pet-resort
+  hobby-projects.html: /hobby-projects
+  e-commerce.html: /e-commerce
+  dashboard-and-analytics-projects.html: /dashboard-and-analytics-projects

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hobby Projects
-permalink: /hobby-projects
+permalink: /hobby-projects.html
 ---
 
 ## 1. Video Playlist Maker

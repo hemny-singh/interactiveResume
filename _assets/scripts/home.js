@@ -20,12 +20,16 @@ $(document).ready(function(){
     });
   }
   changeText();
-  // transform: translate3d(46.3552px, -68.7652px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"
-
+  //transform: translate3d(-107.319px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;
   $('.first-section-overlay').mousemove(function(e){
     var amountMovedX = (e.pageX * -1 / 16);
     var amountMovedY = (e.pageY * -1 / 16);
-    $('#first_section_image').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+    $('#first_section_image').css({
+        "transform": "translate3d(" + amountMovedX + "px," + amountMovedY + "px, 0px)",
+        "transform-style": "preserve-3d",
+        "backface-visibility": "hidden"
+      });
+    // $('#first_section_image').css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
   });
 });
 
@@ -33,7 +37,6 @@ function stickSidebar() {
   var stickySidebar = $('.about-section-sticky');
 
   if (stickySidebar.length > 0) {
-    console.log(stickyHeight);
     var stickyHeight = stickySidebar.height(),
       sidebarTop = stickySidebar.offset().top;
   }
@@ -69,4 +72,8 @@ function stickSidebar() {
   });
 }
 
-stickSidebar();
+if(document.documentElement.clientWidth >= 426){
+  // do your stuff
+  stickSidebar();
+}
+

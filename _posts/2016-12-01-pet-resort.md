@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pet Resort
-permalink: /pet-resort
+permalink: /pet-resort.html
 ---
 
 ## Portal for Pet Resort ​(Oct 2015 - Dec 2015)
@@ -9,4 +9,4 @@ Developed a platform where users can make the reservation in paradise4paws for t
 
 **Technologies:** AngularJS, HTML, CSS, LESS, Python, Django, jQuery, Highcharts
 
-**Responsibilities:** Worked as Full Stack developer. Implemented several modules including payment gateway. Made the User Interface responsive. 
+**Responsibilities:** Worked as Full Stack developer. Implemented several modules including payment gateway. Made the User Interface responsive.

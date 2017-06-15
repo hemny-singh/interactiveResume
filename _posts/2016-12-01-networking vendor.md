@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Networking Vendor
-permalink: /networking-vendor-projects
+permalink: /networking-vendor-projects.html
 ---
 
 ## 1. Analytics Engine for Networking Vendor ​(Feb 2015 - Sept 2015)
@@ -16,7 +16,7 @@ I worked for a networking vendor that creates Controllers. Implemented Analytics
 
 I worked for a networking vendor that creates Controller and Routers. Worked on interface to configure the routers and Controllers.
 
-**Technologies:** AngularJS, HTML, CSS, SASS 
+**Technologies:** AngularJS, HTML, CSS, SASS
 
 **Responsibilities:** Worked as AngularJS developer. Implemented couple of modules and generic directives/components. Improve the User Interface and remove the unexpected behaviour in the User Interface.
 

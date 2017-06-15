@@ -1,7 +1,7 @@
 ---
 layout: post
 title: E-Commerce
-permalink: /e-commerce
+permalink: /e-commerce.html
 ---
 
 ## E-Commerce app for organic vegetables supply(May 2017 - Present)

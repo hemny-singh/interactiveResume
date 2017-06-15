@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Database & Analytics
-permalink: /dashboard-and-analytics-projects
+permalink: /dashboard-and-analytics-projects.html
 ---
 
 ## 1. HiDash (May 2016 - Sep 2016)
@@ -15,6 +15,8 @@ HiDash is a Hashedin internal product to create dashboard using sql queries. HiD
 ## 2. SQueaLy (Oct 2016 - Present)
 
 [SQueaLy](https://github.com/hashedin/squealy/) is extended version of HiDash with better UI and User experience. SQueaLy is an open-source,self-deployable application for developers. It is a micro service for business intelligence and analytics which uses SQL queries to generate reporting APIs with fine-grained security. In SQueaLy, we implemented custom interface to write SQL queries and a lot more configurations with option to share the dashboard.
+
+**Github URL:** [https://github.com/hashedin/squealy/](https://github.com/hashedin/squealy/)
 
 **Technologies:** HTML, CSS, SASS, ReactJS, Python, Django,
 
